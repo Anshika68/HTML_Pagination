@@ -1,0 +1,65 @@
+body {
+  background: white;
+}
+p {
+  color: black;
+  text-align: center;
+}
+h1 {
+  font-weight: bold;
+  color: green;
+  text-align: center;
+  animation: high 4s infinite linear;
+}
+
+.pagination_section{
+  position: absolute;
+  top:500px;
+  right: 230px;
+  text-align: center;
+}
+
+.pagination_section a{
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+.pagination_section a:hover{
+  background-color: darkgreen;
+  color: white;
+}
+
+.active{
+  background-color: darkgreen;
+}
+
+.content{
+  text-align: center;
+  margin-left: 20%;
+  padding: 15px;
+  width: 700px;
+  border: 2px solid black;
+  animation: change 4s infinite linear;
+}
+
+@keyframes change{
+  0%{background-color: azure}
+  20%{background-color: aqua}
+  40%{background-color: chartreuse}
+  60%{background-color: blueviolet}
+  80%{background-color: coral}
+  100%{background-color: darkgoldenrod}
+}
+
+@keyframes high{
+  from{
+    transform: scale(.8)
+  }
+  to{
+    transform: scale(.1.2)
+  }
+}
+
+
+
